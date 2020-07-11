@@ -1,0 +1,2130 @@
+/* Colors
+yellow: #F2E205
+blue: #215BA6
+red: #D9303E
+green: #3FBF48
+------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+}
+
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+}
+
+/* Header
+------------------------------------- */
+.explore {
+  visibility: hidden;
+  display: none;
+  position: absolute;
+}
+
+.nav {
+  border-bottom: 1px solid #EAEAEB;
+  text-align: right;
+  height: 85px;
+  line-height: 85px;
+  color: white;
+}
+
+.menu {
+  margin: 0 30px 0 0;
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: gray;
+  margin: 0 10px;
+  line-height: 85px;
+}
+
+.menu a:hover {
+  color: #F2E205;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 30px;
+  line-height: 85px;
+  display: none;
+  width: 30px;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+/* Header navigation hovering dropdown
+------------------------------------- */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 50px;
+  background-color: #f1f1f1;
+}
+
+.dropdown-content ul {
+  text-decoration: none;
+  list-style-type: none;
+  text-align: left;
+}
+
+.dropdown-content ul a {
+  border-bottom: 1px solid gray;
+}
+
+.dropdown-content a {
+  text-align: center;
+}
+
+.dropdown-content:hover {
+  display: block;
+}
+
+.white-dropdown {
+  display: none;
+}
+
+/*Hides h2-information-column 3 and 4
+------------------------------------- */
+.h2-information-column3 {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+}
+
+.h2-information-column4 {
+  display: hidden;
+  visibility: hidden;
+  position: absolute;
+}
+
+/*Visit.html Main Google map
+------------------------------------- */
+.container.google-map {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 60%;
+  /* desired aspect ratio */
+  position: relative;
+}
+
+.googlemap {
+  border: 0;
+  height: 450px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 320px) {
+  .main-image-top {
+    width: 320px;
+    /* This fixes the width of image when its below or equal to 320px. */
+  }
+
+@media only screen and (max-width: 368px) {
+  .main-image-top {
+    height: 400px;
+  }
+
+  .main-top-text button {
+    margin-top: 6px;
+  }
+
+  .information-section {
+    height: 300px;
+  }
+
+  /*footer */
+  .footer_info {
+    height: 500px;
+  }
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  /* Header
+  ------------------------------------- */
+  label {
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+    background-color: #215BA6;
+    color: white;
+  }
+
+  #toggle:checked+.menu {
+    display: block;
+  }
+
+  /* index.html header
+  ------------------------------------- */
+  .logo {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 20px;
+    top: 22px;
+    width: 235px;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  .nav {
+    background-color: #215BA6;
+    position: relative;
+  }
+
+  .explore {
+    visibility: visible;
+    display: block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    right: 0px;
+    top: 250px;
+    width: 100%;
+  }
+
+  .dropdown-content a {
+    text-align: center;
+    background-color: #3FBF48;
+  }
+
+  .dropdown-content ul li a {
+    border-bottom: 1px solid white;
+  }
+
+  .explore:active {
+    pointer-events: none;
+  }
+
+  .hover:hover+.dropdown-content {
+    display: block;
+  }
+
+  .exhibition-space {
+    border-top: 1px solid white;
+  }
+
+  /* displays explore button while dropdown for EXHIBITION SPACE and SPECIAL EVENTS AND EXHIBITION on the bottom
+  ------------------------------------- */
+  .dropdown-content .white-dropdown {
+    display: block;
+  }
+
+  .visit {
+    border-top: 1px solid white;
+  }
+
+  /*index-html main
+  ------------------------------------- */
+  .main-image-top {
+    background-image: url(../images/astronaut_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 375px;
+    box-sizing: border-box;
+  }
+
+  .main-top-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .main-image-top h1 {
+    padding-top: 50px;
+    text-shadow: 0 0 10px black;
+    font-weight: normal;
+  }
+
+  .main-image-top p {
+    padding-top: 10px;
+    font-size: 18px;
+    color: white;
+  }
+
+  .main-image-top button {
+    margin-top: 20px;
+    padding: 5px 20px 5px 5px;
+    font-family: 'arial';
+    border-radius: 50px;
+    color: white;
+    background-color: #D9303E;
+    cursor: pointer;
+  }
+
+  .main-image-top a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .main-image-top button:hover {
+    border-color: #215BA6;
+    background-color: #215BA6;
+  }
+
+  .information-section {
+    background-color: #215BA6;
+    height: 300px;
+  }
+
+  .h2-information-section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .h2-information-section h2 {
+    padding-top: 20px;
+    color: white;
+    font-size: 24px;
+  }
+
+  .h2-information-section p, a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'helvetica neue', arial;
+  }
+
+  /*index html Section main-page-information
+  ------------------------------------- */
+  .content-wrap {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .museum-image {
+    background-image: url(../images/museum_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  .main-page-information h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    padding-left: 10px;
+    background-color: #f6f6f6;
+  }
+
+  .river-image {
+    background-image: url(../images/river_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #3FBF48;
+    margin-top: 30px;
+  }
+
+  .river-image.right {
+    display: none;
+  }
+
+  .universe-man-image {
+    background-image: url(../images/universe-man_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  .painting-vr-image {
+    background-image: url(../images/painting-vr_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #3FBF48;
+    margin-top: 30px;
+  }
+
+  .painting-vr-image.right {
+    display: none;
+  }
+
+  .mammut-image {
+    background-image: url(../images/mammut_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  /*footer
+  ------------------------------------- */
+  footer {
+    padding-top: 30px;
+  }
+
+  .back_to_top {
+    background-color: #215BA6;
+    opacity: 90%;
+    height: 130px;
+    text-align: center;
+  }
+
+  .back_to_top a {
+    padding-top: 32.5px;
+    display: block;
+  }
+
+  .footer_info {
+    height: 500px;
+    background-color: #215BA6;
+  }
+
+  .footer-text {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .footer-text h4 {
+    padding-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .footer-text p {
+    font-family: 'helvetica neue', arial;
+    padding-top: 5px;
+    padding-left: 0;
+    color: white;
+  }
+
+  .bottom-h4 {
+    padding-bottom: 5px;
+  }
+
+  .footer-text a {
+    font-family: 'helvetica neue', arial;
+    font-size: 16px;
+    padding-right: 10px;
+  }
+
+  /*Visit.html main
+  ------------------------------------- */
+  .main-image-top-visit {
+    background-image: url(../images/inside-museum_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 375px;
+    box-sizing: border-box;
+  }
+
+  .main-top-text-7 h1 {
+    color: white;
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 270px;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  /*visit.html main Google map
+  ------------------------------------- */
+  .main-visit h2 {
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+
+  .main-visit p {
+    font-family: 'helvetica neue', arial, sans-serif;
+    color: black;
+    padding-bottom: 20px;
+  }
+
+  .container.google-map {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 60%;
+    /* desired aspect ratio */
+    position: relative;
+  }
+
+  .googlemap {
+    border: 0;
+    height: 350px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+  /*Explore.html
+  ------------------------------------- */
+  .main-image-top-explore {
+    background-image: url(../images/explore-museum_small.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 375px;
+    box-sizing: border-box;
+  }
+
+  .explore-page-information {
+    background-color: #f6f6f6;
+  }
+
+  .explore-page-information h2 {
+    color: #215BA6;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+  }
+
+  .explore-page-information p {
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .kid-image {
+    background-image: url(../images/kid_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  .teacher-image {
+    background-image: url(../images/teacher_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #215BA6;
+    margin-top: 30px;
+  }
+
+  .researcher-image {
+    background-image: url(../images/researchers_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  /*about.html
+  ------------------------------------- */
+  .main-image-top-about {
+    background-image: url(../images/about-us_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 375px;
+    box-sizing: border-box;
+  }
+
+  .about-top {
+    margin-top: 20px;
+  }
+
+  .about-top p {
+    font-size: 30px;
+    font-family: georgia;
+  }
+
+  .about-page-information p {
+    font-size: 18px;
+    font-family: 'helvetica neue', arial, sans-serif;
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .scientist-image {
+    background-image: url(../images/scientist_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #3FBF48;
+    margin-top: 30px;
+  }
+
+  .about-page-information h2 {
+    margin: 12px 0;
+    padding-left: 10px;
+  }
+
+  .about-page-information h3 {
+    margin: 12px 0;
+    padding-left: 10px;
+  }
+
+  /*about.html contact form
+  ------------------------------------- */
+  form {
+    transition: all 4s ease-in-out;
+  }
+
+  .contact-form {
+    padding-left: 13px;
+    color: black;
+    background-color: white;
+  }
+
+  .form-control {
+    width: 250px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  input {
+    height: 45px;
+    color: red;
+  }
+
+  input[type=text], [type=email], [type=message] {
+    color: black;
+  }
+
+  textarea:focus, input:focus {
+    color: black;
+  }
+
+  form .submit {
+    background: #3FBF48;
+    border-color: transparent;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  form .submit:hover {
+    background-color: #215BA6;
+  }
+
+  /*involved.html
+------------------------------------- */
+  .main-image-top-involved {
+    background-image: url(../images/get-involved_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 375px;
+    box-sizing: border-box;
+  }
+
+  .involved-page-information {
+    background-color: #f6f6f6;
+  }
+
+  .involved-page-information h2 {
+    color: #215BA6;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+  }
+
+  .involved-page-information p {
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .support-image {
+    background-image: url(../images/support_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #3FBF48;
+    margin-top: 30px;
+  }
+
+  .involved-page-information a {
+    color: #215BA6;
+  }
+
+  .volunteer-image {
+    background-image: url(../images/volunteer_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #215BA6;
+    margin-top: 30px;
+  }
+
+  .internship-image {
+    background-image: url(../images/internship_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  /*exhibition.html
+------------------------------------- */
+  .main-image-top-exhibition {
+    background-image: url(../images/exhibition_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 375px;
+    box-sizing: border-box;
+  }
+
+  .exhibition-page-information {
+    background-color: #f6f6f6;
+  }
+
+  .exhibition-page-information h2 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  .exhibition-page-information p {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .cosmology-image {
+    background-image: url(../images/cosmology_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  .evolution-image {
+    background-image: url(../images/evolution_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #3FBF48;
+    margin-top: 30px;
+  }
+
+  .biology-medicine-image {
+    background-image: url(../images/biology-medicine_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  .robotics-ai-image {
+    background-image: url(../images/robotics-ai_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #3FBF48;
+    margin-top: 30px;
+  }
+
+  .ecology-image {
+    background-image: url(../images/ecology_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  /*special-events.html
+------------------------------------- */
+  .main-image-top-special-events {
+    background-image: url(../images/special-events_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 375px;
+    box-sizing: border-box;
+  }
+
+  .main-top-text-special-events {
+    margin-left: 20px;
+    padding-top: 220px;
+  }
+
+  .main-top-text-special-events h1 {
+    color: white;
+    display: inline-block;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .h2-news {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+
+  .special-events-page-information {
+    background-color: #f6f6f6;
+  }
+
+  .special-events-page-information h3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .special-events-page-information h3 a {
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+  }
+
+  .special-events-page-information p {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .aeronautics-image {
+    background-image: url(../images/aeronautics_small.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  .night-museum-image {
+    background-image: url(../images/night-museum_small.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #215BA6;
+    margin-top: 30px;
+  }
+
+  .energetica-image {
+    background-image: url(../images/energetica_small.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+
+  /* Header
+    ------------------------------------- */
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+    background-color: #215BA6;
+    color: white;
+  }
+
+  #toggle:checked+.menu {
+    display: block;
+  }
+
+  /* Header navigation hovering dropdown
+    ------------------------------------- */
+  .logo {
+    /* Need on tablet and desktop
+      ------------------------------------- */
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 40px;
+    top: 22px;
+    width: 235px;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  .nav {
+    background-color: #215BA6;
+    position: relative;
+  }
+
+  .explore {
+    visibility: visible;
+    display: block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    right: 0px;
+    top: 250px;
+    width: 100%;
+  }
+
+  .dropdown-content a {
+    text-align: center;
+    background-color: #3FBF48;
+  }
+
+  .dropdown-content ul li a {
+    border-bottom: 1px solid white;
+  }
+
+  .explore:active {
+    pointer-events: none;
+  }
+
+  .hover:hover+.dropdown-content {
+    display: block;
+  }
+
+  .exhibition-space {
+    border-top: 1px solid white;
+  }
+
+  /* displays explore button while dropdown for EXHIBITION SPACE and SPECIAL EVENTS AND EXHIBITION on the bottom
+    ------------------------------------- */
+  .dropdown-content .white-dropdown {
+    display: block;
+  }
+
+  .visit {
+    border-top: 1px solid white;
+  }
+
+  /*Index.html
+    ------------------------------------- */
+  .main-image-top {
+    background-image: url(../images/astronaut_big.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 375px;
+    box-sizing: border-box;
+  }
+
+  .main-top-text {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 50px;
+  }
+
+  .main-image-top h1 {
+    padding-top: 50px;
+    text-shadow: 0 0 10px black;
+    font-weight: normal;
+  }
+
+  .main-image-top p {
+    padding-top: 10px;
+    font-size: 18px;
+    color: white;
+  }
+
+  .main-image-top button {
+    margin-top: 20px;
+    height: 50px;
+    padding: 5px 20px 5px 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: #D9303E;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .main-image-top a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .main-image-top button:hover {
+    border-color: #215BA6;
+    background-color: #215BA6;
+  }
+
+  .information-section {
+    background-color: #215BA6;
+    height: 239px;
+  }
+
+  .h2-information-section {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .h2-information-section h2 {
+    padding-top: 40px;
+    color: white;
+    font-size: 24px;
+  }
+
+  .h2-information-section p, a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'helvetica neue', arial;
+  }
+
+  /*index.html Section main-page-information
+    ------------------------------------- */
+  .museum-image {
+    background-image: url(../images/museum_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  .main-page-information h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    background-color: #f6f6f6;
+  }
+
+  .river-image {
+    background-image: url(../images/river_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #3FBF48;
+    margin-top: 30px;
+  }
+
+  .river-image.right {
+    display: none;
+  }
+
+  .universe-man-image {
+    background-image: url(../images/universe-man_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  .painting-vr-image {
+    background-image: url(../images/painting-vr_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #3FBF48;
+    margin-top: 30px;
+  }
+
+  .mammut-image {
+    background-image: url(../images/mammut_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  /*footer
+    ------------------------------------- */
+  footer {
+    padding-top: 30px;
+  }
+
+  .back_to_top {
+    padding-top: 30px;
+    background-color: #215BA6;
+    opacity: 90%;
+    height: 130px;
+  }
+
+  .back_to_top a {
+    display: block;
+    padding: 0;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .footer_info {
+    height: 400px;
+    background-color: #215BA6;
+  }
+
+  .footer-text {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .footer-text h4 {
+    padding-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .footer-text p {
+    font-family: 'helvetica neue', arial;
+    padding-top: 5px;
+    padding-left: 0;
+    color: white;
+  }
+
+  .bottom-h4 {
+    padding-bottom: 5px;
+  }
+
+  .footer-text a {
+    font-family: 'helvetica neue', arial;
+    font-size: 16px;
+    padding-right: 10px;
+  }
+
+  /*Main-top-text 7 pages
+    ------------------------------------- */
+  .main-top-text-7 h1 {
+    color: white;
+    margin-left: 40px;
+    display: inline-block;
+    margin-top: 270px;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  /*visit.html
+    ------------------------------------- */
+  .content-wrap {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .main-image-top-visit {
+    background-image: url(../images/inside-museum_big.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 375px;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .content-wrap-visit {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .main-visit h2 {
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+
+  .main-visit p {
+    font-family: 'helvetica neue', arial, sans-serif;
+    color: black;
+    padding-bottom: 20px;
+  }
+
+  /*explore.html
+    ------------------------------------- */
+  .main-image-top-explore {
+    background-image: url(../images/explore-museum_big.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 375px;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .explore-page-information {
+    background-color: #f6f6f6;
+  }
+
+  .explore-page-information h2 {
+    color: #215BA6;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+  }
+
+  .explore-page-information p {
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .kid-image {
+    background-image: url(../images/kid_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  .teacher-image {
+    background-image: url(../images/teacher_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #215BA6;
+    margin-top: 30px;
+  }
+
+  .researcher-image {
+    background-image: url(../images/researchers_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  /*dropdown menu
+    ------------------------------------- */
+  .menu a {
+    z-index: 1;
+  }
+
+  .about {
+    position: relative;
+  }
+
+  .involved {
+    position: relative;
+  }
+
+  .dropdown-content {
+    z-index: 2;
+  }
+
+  /*about.html
+    ------------------------------------- */
+  .main-image-top-about {
+    background-image: url(../images/about-us_big.jpg);
+    background-position: center left;
+    height: 375px;
+    background-size: cover;
+  }
+
+  .about-top {
+    margin-top: 20px;
+  }
+
+  .about-top p {
+    font-size: 30px;
+    font-family: georgia;
+    max-width: 550px;
+  }
+
+  .about-page-information p {
+    font-size: 18px;
+    font-family: 'helvetica neue', arial, sans-serif;
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .scientist-image {
+    background-image: url(../images/scientist_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 260px;
+    border: 10px solid #3FBF48;
+    margin-top: 30px;
+  }
+
+  .about-page-information h2 {
+    margin: 12px 0;
+    padding-left: 10px;
+  }
+
+  .about-page-information h3 {
+    margin: 12px 0;
+    padding-left: 10px;
+  }
+
+  /*about.html contact form
+    ------------------------------------- */
+  form {
+    transition: all 4s ease-in-out;
+  }
+
+  .contact-form {
+    padding-left: 13px;
+    color: black;
+    background-color: white;
+  }
+
+  .form-control {
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  input {
+    height: 45px;
+    color: red;
+  }
+
+  input[type=text], [type=email], [type=message] {
+    color: black;
+  }
+
+  textarea:focus, input:focus {
+    color: black;
+  }
+
+  form .submit {
+    background: #3FBF48;
+    border-color: transparent;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  form .submit:hover {
+    background-color: #215BA6;
+  }
+
+  /*involved.html
+    ------------------------------------- */
+  .main-image-top-involved {
+    background-image: url(../images/get-involved_big.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 375px;
+    box-sizing: border-box;
+  }
+
+  .involved-page-information {
+    background-color: #f6f6f6;
+  }
+
+  .involved-page-information h2 {
+    color: #215BA6;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+  }
+
+  .involved-page-information p {
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .support-image {
+    background-image: url(../images/support_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #3FBF48;
+    margin-top: 30px;
+  }
+
+  .involved-page-information a {
+    color: #215BA6;
+  }
+
+  .volunteer-image {
+    background-image: url(../images/volunteer_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #215BA6;
+    margin-top: 30px;
+  }
+
+  .internship-image {
+    background-image: url(../images/internship_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  /*exhibition.html
+    ------------------------------------- */
+  .main-image-top-exhibition {
+    background-image: url(../images/exhibition_big.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 375px;
+    box-sizing: border-box;
+  }
+
+  .exhibition-page-information {
+    background-color: #f6f6f6;
+  }
+
+  .exhibition-page-information h2 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  .exhibition-page-information p {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .cosmology-image {
+    background-image: url(../images/cosmology_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  .evolution-image {
+    background-image: url(../images/evolution_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #3FBF48;
+    margin-top: 30px;
+  }
+
+  .biology-medicine-image {
+    background-image: url(../images/biology-medicine_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  .robotics-ai-image {
+    background-image: url(../images/robotics-ai_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #3FBF48;
+    margin-top: 30px;
+  }
+
+  .ecology-image {
+    background-image: url(../images/ecology_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  /*special-events.html
+    ------------------------------------- */
+  .main-image-top-special-events {
+    background-image: url(../images/special-events_big.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 375px;
+    box-sizing: border-box;
+  }
+
+  .main-top-text-special-events {
+    margin-left: 40px;
+    padding-top: 220px;
+  }
+
+  .main-top-text-special-events h1 {
+    color: white;
+    display: inline-block;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .h2-news {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+
+  .special-events-page-information {
+    background-color: #f6f6f6;
+  }
+
+  .special-events-page-information h3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .special-events-page-information h3 a {
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+  }
+
+  .special-events-page-information p {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .aeronautics-image {
+    background-image: url(../images/aeronautics_small.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+
+  .night-museum-image {
+    background-image: url(../images/night-museum_small.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #215BA6;
+    margin-top: 30px;
+  }
+
+  .energetica-image {
+    background-image: url(../images/energetica_small.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    max-width: 100%;
+    height: 260px;
+    border: 10px solid #F2E205;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+
+  /*dropdown
+    ------------------------------------- */
+  .menu a {
+    z-index: 1;
+  }
+
+  .about {
+    position: relative;
+  }
+
+  .involved {
+    position: relative;
+  }
+
+  .dropdown-content {
+    z-index: 2;
+  }
+
+  .main-top-text {
+    width: 460px;
+  }
+
+  /*visit.html
+    ------------------------------------- */
+  .main-visit.one {
+    max-width: 400px;
+    float: left;
+    margin-right: 100px;
+  }
+
+  .main-visit.two {
+    max-width: 400px;
+    float: left;
+  }
+
+  .main-visit.three {
+    float: left;
+    max-width: 400px;
+    clear: left;
+    margin-right: 100px;
+  }
+
+  .main-visit.four {
+    max-width: 400px;
+    float: left;
+    clear: right;
+  }
+
+  .main-visit.five {
+    max-width: 400px;
+    clear: left;
+    padding-top: 5px;
+  }
+
+  /*about.html
+    ------------------------------------- */
+  .form-control {
+    width: 500px;
+  }
+
+  .scientist-image {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  /*index.html
+    ------------------------------------- */
+  .information-section {
+    height: 300px;
+  }
+
+  .h2-information-column1 {
+    float: left;
+    clear: both;
+    width: 300px;
+  }
+
+  .h2-information-column2 {
+    float: right;
+    width: 300px;
+  }
+
+  .h2-information-column3 {
+    display: block;
+    visibility: visible;
+    position: relative;
+    float: left;
+    width: 300px;
+  }
+
+  .h2-information-column4 {
+    display: block;
+    visibility: visible;
+    position: relative;
+    float: right;
+    width: 300px;
+  }
+
+  .river-image {
+    display: none;
+  }
+
+  .river-image.right {
+    display: block;
+  }
+
+  .painting-vr-image {
+    display: none;
+  }
+
+  .painting-vr-image.right {
+    display: block;
+  }
+
+  .museum-image {
+    width: 1000px;
+  }
+
+  .river-image {
+    width: 1930.7px;
+  }
+
+  .universe-man-image {
+    width: 1851.2px;
+  }
+
+  .painting-vr-image {
+    width: 1850.6px;
+  }
+
+  .mammut-image {
+    width: 1826.8px;
+  }
+
+  .main-page-information {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .main-page-information h3 {
+    padding-top: 60px;
+    margin-left: 40px;
+    margin-top: 30px;
+    float: left;
+  }
+
+  .main-page-information.right h3 {
+    margin-right: 40px;
+    margin-left: 0;
+  }
+
+  /*visit.html
+    ------------------------------------- */
+  .content-wrap {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  /*explore.html
+    ------------------------------------- */
+  .explore-page-information {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+  }
+
+  .kid-image {
+    width: 1000px;
+    height: 490px;
+  }
+
+  .teacher-image {
+    width: 1108px;
+    background-position: center;
+  }
+
+  .researcher-image {
+    width: 653.8px;
+    background-position: center;
+  }
+
+  .explore-page-text {
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: #f6f6f6;
+  }
+
+  /*about.html
+    ------------------------------------- */
+  .scientist-image {
+    height: 400px;
+    background-position: center;
+  }
+
+  .about-page-information {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .about-page-text {
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: #f6f6f6;
+  }
+
+  .about-page-information.second {
+    display: block;
+  }
+
+  /*involved.html
+    ------------------------------------- */
+  .involved-page-information {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+  }
+
+  .involved-page-text {
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: #f6f6f6;
+  }
+
+  .support-image {
+    width: 1500px;
+    background-position: center;
+  }
+
+  .volunteer-image {
+    width: 2492.2px;
+    background-position: center;
+  }
+
+  .internship-image {
+    width: 1351.9px;
+    background-position: center;
+  }
+
+  /*exhibition.html
+    ------------------------------------- */
+  .exhibition-page-information {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+  }
+
+  .exhibition-page-text {
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: #f6f6f6;
+  }
+
+  .cosmology-image {
+    width: 1500px;
+    background-position: center;
+  }
+
+  .evolution-image {
+    width: 1307.1px;
+    background-position: center;
+  }
+
+  .biology-medicine-image {
+    width: 1544.6px;
+    background-position: center;
+  }
+
+  .robotics-ai-image {
+    width: 1203.49px;
+    background-position: center;
+  }
+
+  .ecology-image {
+    width: 1082.25px;
+    background-position: center;
+  }
+
+  /*special-events.html
+    ------------------------------------- */
+  .special-events-page-information {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+  }
+
+  .special-events-page-text {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .aeronautics-image {
+    width: 1544.6px;
+    background-position: center;
+  }
+
+  .night-museum-image {
+    width: 1527.4px;
+    background-position: center;
+  }
+
+  .energetica-image {
+    width: 2562.1px;
+    background-position: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    float: right;
+  }
+
+  label {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .menu {
+    display: block;
+    float: right;
+    width: 600px;
+    margin-right: 40px;
+  }
+
+  .menu a {
+    display: inline-block;
+    border: none;
+    border-right: 1px solid white;
+    padding-right: 10px;
+    margin: 0;
+    background-color: #215BA6;
+    color: white;
+  }
+
+  /* Header navigation hovering dropdown
+      ------------------------------------- */
+  .hover {
+    display: inline-block;
+  }
+
+  .hover:hover+.dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 198px;
+    top: 86px;
+    background-color: #215BA6;
+    width: 450px;
+  }
+
+  .dropdown-content ul {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .dropdown-content ul a {
+    border-style: none;
+  }
+
+  .dropdown-content a {
+    text-align: center;
+  }
+
+  .explore:active {
+    pointer-events: all;
+  }
+
+  .dropdown-content:hover {
+    display: block;
+  }
+
+  .white-dropdown {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+  }
+
+  /* explore
+      ------------------------------------- */
+  .kid-image {
+    width: 1000px;
+    height: 400px;
+  }
+
+  .footer-text {
+    float: left;
+  }
+
+  .footer-text.fourth {
+    margin: 0 300 0 0;
+    float: left;
+  }
+
+  .footer_info {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 1493px) {
+
+  /* logo
+  ------------------------------------- */
+  .logo {
+    left: 200px;
+  }
+
+  .menu {
+    margin-right: 200px;
+  }
+
+  label {
+    margin-right: 200px;
+  }
+
+  /* index.html
+  ------------------------------------- */
+  .main-image-top {
+    height: 450px;
+  }
+
+  .main-top-text {
+    padding-top: 100px;
+  }
+
+  /*main-top-text 7 pages
+  ------------------------------------- */
+  .main-top-text-7 h1 {
+    margin-left: 200px;
+  }
+
+  .main-top-text {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .h2-information-section {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .footer-text {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  /*visit
+  ------------------------------------- */
+  .content-wrap {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  /* footer
+  ------------------------------------- */
+  .back_to_top a {
+    margin-left: 1180px;
+  }
+
+  .footer-text {
+    float: left;
+  }
+
+  .footer-text.fourth {
+    margin: 0 136px;
+  }
+
+  .footer_info {
+    height: 250px;
+  }
+
+  /* information section
+  ------------------------------------- */
+  .h2-information-section {
+    margin-right: 450px;
+  }
+
+  /* explore
+  ------------------------------------- */
+  .kid-image {
+    width: 1000px;
+    height: 330px;
+  }
+
+  /* about.html
+  ------------------------------------- */
+  .who {
+    position: absolute;
+    top: 600px;
+    left: 760px;
+    width: 600px;
+  }
+
+  #support-contact {
+    margin-top: 40px;
+  }
+
+  /* about.html
+  ------------------------------------- */
+  .main-top-text-special-events {
+    margin-left: 200px;
+  }
+}
